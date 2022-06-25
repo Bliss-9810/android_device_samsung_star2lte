@@ -42,3 +42,5 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
+# Enable Dolby Atmos
+TARGET_HAVE_SAMSUNG_DAP := true
