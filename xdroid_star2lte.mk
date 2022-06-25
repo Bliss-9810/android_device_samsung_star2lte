@@ -28,14 +28,17 @@ TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOT_ANIMATION_RES := 1440
 
-## Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+## Inherit some common xdroid stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT := 1440
+XDROID_MAINTAINER := Faiz
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_star2lte
+PRODUCT_NAME := xdroid_star2lte
 PRODUCT_DEVICE := star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
